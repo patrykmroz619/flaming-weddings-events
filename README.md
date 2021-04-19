@@ -1,1 +1,3 @@
-# flaming-weddings-events
+# Flaming weddings & events
+
+**Website in progress**
