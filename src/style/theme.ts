@@ -1,8 +1,9 @@
 export const theme = {
   colors: {
     primary: `#c21500`,
-    font: `#222222`,
-    light: `#eeeeee`,
+    font: `#111`,
+    light: `#fafafa`,
+    dark: `#111111`,
   },
   spacing: {
     xs: `5px`,

@@ -19,6 +19,7 @@ export const Button = styled.button`
   transition: 0.5s;
   background-size: 200% auto;
   background-image: ${({ theme }) => theme.gradient};
+  box-shadow: 0 3px 10px -1px black;
 
   &:hover {
     background-position: right center;

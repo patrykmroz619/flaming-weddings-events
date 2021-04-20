@@ -15,7 +15,7 @@ export const MobileNavigation = () => {
     <AnimateSharedLayout>
       <S.Nav layout>
         <S.Header layout>
-          <Image src="/logo.png" width="35" height="35" />
+          <Image src="/icons/logo.png" width="35" height="35" />
           <Toggler isActive={isOpen} handleClick={handleTogglerClick} />
         </S.Header>
         {isOpen && <LinksList />}

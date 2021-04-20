@@ -25,6 +25,7 @@ const GlobalStyle = createGlobalStyle`
     width: 100vw;
     overflow-x: hidden;
     font-size: 16px;
+    color: ${({ theme }) => theme.colors.font};
 
     ${minWidth(breakpoints.l)} {
       font-size: 18px;

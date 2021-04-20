@@ -11,7 +11,7 @@ const lastRoute = arrayOfRoutes.pop();
 
 export const DescopNavigation = () => (
   <S.Nav>
-    <Image src="/logo.png" width="80" height="80" />
+    <Image src="/icons/logo.png" width="80" height="80" />
     <S.LinksList>
       {arrayOfRoutes.map((link) => (
         <NavLink

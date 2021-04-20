@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 import { routes } from '@/routes';
 
@@ -6,6 +7,14 @@ import * as S from './styled';
 
 export const MainSection = () => (
   <S.Main>
+    <S.BackgroundWrapper>
+      <Image
+        src="/images/background.jpg"
+        layout="fill"
+        objectFit="cover"
+        objectPosition="center"
+      />
+    </S.BackgroundWrapper>
     <S.Hero>
       <S.Heading>
         Flaming

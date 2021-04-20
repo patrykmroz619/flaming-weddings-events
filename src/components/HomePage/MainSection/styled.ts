@@ -6,7 +6,6 @@ export const Main = styled.main`
   position: relative;
   width: 100vw;
   height: 100vh;
-  border: 1px solid black;
 `;
 
 export const Hero = styled.div`
@@ -56,4 +55,32 @@ export const Subheading = styled.p`
 export const Btn = styled(Button)`
   width: 200px;
   margin: 0 auto;
+`;
+
+export const BackgroundWrapper = styled.div`
+  position: relative;
+  height: 100%;
+  div {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    filter: grayscale(0.6);
+  }
+
+  ::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    background-image: radial-gradient(
+      #ffffffd2 10%,
+      ${({ theme }) => theme.colors.light} 75%
+    );
+  }
 `;
