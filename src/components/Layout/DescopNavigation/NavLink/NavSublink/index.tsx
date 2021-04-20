@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 import * as S from './styled';
 
-type NavSublinkProps = NavSublinkData & { index: number };
+type NavSublinkProps = PageRoute & { index: number };
 
 const variants = {
   visible: (i: number) => ({
@@ -29,7 +29,9 @@ export const NavSublink = ({ href, title, index }: NavSublinkProps) => (
     custom={index}
   >
     <Link href={href}>
-      <S.Sublink title={title}>{title}</S.Sublink>
+      <S.Sublink as="a" title={title}>
+        {title}
+      </S.Sublink>
     </Link>
   </motion.li>
 );

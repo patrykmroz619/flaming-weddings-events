@@ -6,15 +6,15 @@ import { AnimatePresence } from 'framer-motion';
 import { NavSublink } from './NavSublink';
 import * as S from './styled';
 
-type NavLinkProps = NavLinkData;
+type NavLinkProps = PageRoute;
 
-export const NavLink = ({ href, title, subLinks }: NavLinkProps) => {
+export const NavLink = ({ href, title, subroutes }: NavLinkProps) => {
   const sublinksComponents = useMemo(
     () =>
-      subLinks?.map((link, index) => (
+      subroutes?.map((link, index) => (
         <NavSublink key={link.href} index={index} {...link} />
       )),
-    [subLinks],
+    [subroutes],
   );
 
   const linkRef = useRef<HTMLLIElement>(null);
@@ -25,7 +25,7 @@ export const NavLink = ({ href, title, subLinks }: NavLinkProps) => {
       <Link href={href}>
         <S.NavLink title={title}>{title}</S.NavLink>
       </Link>
-      {subLinks && (
+      {subroutes && (
         <S.SublinksList>
           <AnimatePresence>
             {isLinkHovered && sublinksComponents}
