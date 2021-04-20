@@ -1,4 +1,5 @@
 import { DescopNavigation } from './DescopNavigation';
+import { Footer } from './Footer';
 import { MobileNavigation } from './MobileNavigation';
 import { Socials } from './Socials';
 
@@ -14,7 +15,7 @@ const Layout = ({ children }: LayoutProps) => (
     <DescopNavigation />
     <Socials />
     <div>{children}</div>
-    <footer>Footer</footer>
+    <Footer />
   </S.Wrapper>
 );
 
