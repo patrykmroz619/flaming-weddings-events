@@ -28,7 +28,7 @@ export const NavSublink = ({ href, title, index }: NavSublinkProps) => (
     variants={variants}
     custom={index}
   >
-    <Link href={href}>
+    <Link href={href} passHref>
       <S.Sublink as="a" title={title}>
         {title}
       </S.Sublink>

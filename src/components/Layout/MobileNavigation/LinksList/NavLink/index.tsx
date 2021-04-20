@@ -19,11 +19,11 @@ const variants = {
 
 export const NavLink = ({ route }: NavLinkProps) => (
   <S.Wrapper layout variants={variants}>
-    <Link href={route.href}>
+    <Link href={route.href} passHref>
       <S.Link title={route.title}>{route.title}</S.Link>
     </Link>
     {route.subroutes?.map((subroute) => (
-      <Link key={subroute.href} href={subroute.href}>
+      <Link key={subroute.href} href={subroute.href} passHref>
         <S.Sublink title={subroute.title}>{subroute.title}</S.Sublink>
       </Link>
     ))}

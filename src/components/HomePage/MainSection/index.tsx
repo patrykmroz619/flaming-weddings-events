@@ -13,7 +13,7 @@ export const MainSection = () => (
         Weddings & Events
       </S.Heading>
       <S.Subheading>Barman na Twoją imprezę!</S.Subheading>
-      <Link href={routes.offer.href}>
+      <Link href={routes.offer.href} passHref>
         <S.Btn as="a" title={routes.offer.title} type="button">
           Oferta
         </S.Btn>

@@ -22,7 +22,7 @@ export const DescopNavigation = () => (
         />
       ))}
       {lastRoute && (
-        <Link href={lastRoute.href}>
+        <Link href={lastRoute.href} passHref>
           <Button as="a" title={lastRoute.title}>
             {lastRoute.title}
           </Button>

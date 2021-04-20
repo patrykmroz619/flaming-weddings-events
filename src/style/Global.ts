@@ -40,6 +40,11 @@ const GlobalStyle = createGlobalStyle`
   ul {
     list-style: none;
   }
+
+  a {
+    color: ${({ theme }) => theme.colors.font};
+    text-decoration: none;
+  }
 `;
 
 export default GlobalStyle;

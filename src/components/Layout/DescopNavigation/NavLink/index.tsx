@@ -22,7 +22,7 @@ export const NavLink = ({ href, title, subroutes }: NavLinkProps) => {
 
   return (
     <S.NavLinkWrapper ref={linkRef}>
-      <Link href={href}>
+      <Link href={href} passHref>
         <S.NavLink title={title}>{title}</S.NavLink>
       </Link>
       {subroutes && (
