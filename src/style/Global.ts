@@ -8,6 +8,10 @@ const GlobalStyle = createGlobalStyle`
     ${minWidth(breakpoints.s)} {
       --content-x-margin: ${({ theme }) => theme.spacing.m};
     }
+
+    ${minWidth(breakpoints.m)} {
+      --content-x-margin: ${({ theme }) => theme.spacing.l};
+    }
   }
 
   html * {
@@ -21,6 +25,10 @@ const GlobalStyle = createGlobalStyle`
     width: 100vw;
     overflow-x: hidden;
     font-size: 16px;
+
+    ${minWidth(breakpoints.l)} {
+      font-size: 18px;
+    }
   }
 
   @media (min-width: 1024px) {
