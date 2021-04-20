@@ -1,6 +1,6 @@
-type Routes = { [index: string]: PageRoute };
+type Pages = 'home' | 'about' | 'offer' | 'gallery' | 'contact';
 
-export const routes: Routes = {
+export const routes: Record<Pages, PageRoute> = {
   home: {
     href: `/`,
     title: `Strona główna`,
