@@ -5,7 +5,8 @@ export const Nav = styled.nav`
   display: none;
   ${minWidth(breakpoints.xl)} {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
     position: absolute;
     top: ${({ theme }) => theme.spacing.s};
     left: 50%;

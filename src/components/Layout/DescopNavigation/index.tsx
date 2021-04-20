@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Button } from '@/components/common';
 import { routes } from '@/routes';
+import Image from 'next/image';
 import { NavLink } from './NavLink';
 import * as S from './styled';
 
@@ -10,6 +11,7 @@ const lastRoute = arrayOfRoutes.pop();
 
 export const DescopNavigation = () => (
   <S.Nav>
+    <Image src="/logo.png" width="80" height="80" />
     <S.LinksList>
       {arrayOfRoutes.map((link) => (
         <NavLink
