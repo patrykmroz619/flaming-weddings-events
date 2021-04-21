@@ -38,6 +38,11 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
+  h1, h2, h3 {
+    font-family: 'Bangers';
+    letter-spacing: 3px;
+  }
+
   ul {
     list-style: none;
   }

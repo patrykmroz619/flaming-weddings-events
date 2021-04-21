@@ -46,7 +46,7 @@ class MyDocument extends Document {
           <link
             rel="preload"
             as="style"
-            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Luckiest+Guy&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Bangers&display=swap"
           />
           <style
             // hack allows load fonts asynchronously
@@ -55,7 +55,7 @@ class MyDocument extends Document {
               __html: `</style>
                         <link
                           rel="stylesheet"
-                          href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Luckiest+Guy&display=swap"
+                          href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Bangers&display=swap"
                           media="print"
                           onload="this.media = 'all';"
                         />

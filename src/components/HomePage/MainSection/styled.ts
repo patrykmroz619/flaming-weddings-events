@@ -18,11 +18,10 @@ export const Hero = styled.div`
 export const Heading = styled.h1`
   text-align: center;
   font-size: 25px;
-  font-family: 'Luckiest Guy', 'Lato', sans-serif;
   font-weight: 400;
 
   &::first-line {
-    font-size: 50px;
+    font-size: 70px;
     text-transform: uppercase;
   }
 
@@ -30,16 +29,20 @@ export const Heading = styled.h1`
     font-size: 35px;
 
     &::first-line {
-      font-size: 70px;
+      font-size: 80px;
     }
   }
 
   ${minWidth(breakpoints.l)} {
-    font-size: 45px;
+    font-size: 50px;
 
     &::first-line {
-      font-size: 90px;
+      font-size: 120px;
     }
+  }
+
+  ${minWidth(breakpoints.xl)} {
+    font-size: 60px;
   }
 `;
 
