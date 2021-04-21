@@ -10,8 +10,6 @@ export const Text = styled.p`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0 auto;
-  max-width: ${({ theme }) => theme.contentWidth};
   font-size: 14px;
   color: ${({ theme }) => theme.colors.light};
 
@@ -21,7 +19,6 @@ export const Text = styled.p`
     text-align: center;
 
     ${minWidth(breakpoints.m)} {
-      margin: 0 var(--content-x-margin);
       flex-basis: auto;
     }
   }

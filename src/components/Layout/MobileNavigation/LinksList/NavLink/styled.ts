@@ -8,7 +8,7 @@ export const Wrapper = styled(motion.li)`
 
 export const Link = styled.a`
   display: block;
-  margin: ${({ theme }) => theme.spacing.xs} var(--content-x-margin);
+  margin: ${({ theme }) => theme.spacing.xs} 0;
   padding: 10px;
   font-weight: bold;
   background-color: rgba(0, 0, 0, 0.02);

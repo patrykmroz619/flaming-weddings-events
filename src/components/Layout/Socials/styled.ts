@@ -1,14 +1,19 @@
+import { breakpoints, minWidth } from '@/style/media';
 import styled from 'styled-components';
 
 export const SocialsWrapper = styled.div`
-  position: fixed;
-  top: calc(50% - 75px);
-  right: ${({ theme }) => theme.spacing.m};
-  z-index: 2;
-  height: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: none;
+
+  ${minWidth(breakpoints.xl)} {
+    position: fixed;
+    top: calc(50% - 75px);
+    right: ${({ theme }) => theme.spacing.m};
+    z-index: 2;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 `;
 
 export const SocialLink = styled.a`

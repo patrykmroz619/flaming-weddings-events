@@ -20,7 +20,7 @@ export const Box = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: ${({ theme }) => theme.spacing.m} var(--content-x-margin);
+  margin: ${({ theme }) => theme.spacing.m} 0;
   order: 1;
 
   ${minWidth(breakpoints.l)} {

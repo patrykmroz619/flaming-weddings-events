@@ -21,6 +21,5 @@ export const Header = styled(motion.header)`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 var(--content-x-margin);
   height: 40px;
 `;
