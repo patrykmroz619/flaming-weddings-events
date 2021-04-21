@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Button = styled.button`
   display: block;
   padding: ${({ theme: { spacing } }) => `0 ${spacing.l}`};
+  max-width: 200px;
   height: 40px;
   line-height: 40px;
 
