@@ -7,7 +7,7 @@ export const SocialsWrapper = styled.div`
   ${minWidth(breakpoints.xl)} {
     position: fixed;
     top: calc(50% - 75px);
-    right: ${({ theme }) => theme.spacing.m};
+    right: ${({ theme }) => theme.spacing.s};
     z-index: 2;
     height: 150px;
     display: flex;

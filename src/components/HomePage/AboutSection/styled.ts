@@ -3,16 +3,26 @@ import { Button, Container } from '@/components/common';
 import { breakpoints, minWidth } from '@/style/media';
 
 export const Section = styled.section`
+  padding-bottom: ${({ theme }) => theme.spacing.l};
   background-color: ${({ theme }) => theme.colors.light};
+
+  ${minWidth(breakpoints.xl)} {
+    padding-bottom: ${({ theme }) => theme.spacing.xl};
+  }
 `;
 
 export const ContentWrapper = styled(Container)`
   display: flex;
   flex-direction: column;
+  justify-content: center;
 
   ${minWidth(breakpoints.l)} {
     flex-direction: row;
-    align-items: center;
+  }
+
+  @media (orientation: landscape) {
+    flex-direction: row;
+    min-height: 100vh;
   }
 `;
 
@@ -20,10 +30,16 @@ export const Box = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-self: center;
   margin: ${({ theme }) => theme.spacing.m} 0;
   order: 1;
 
   ${minWidth(breakpoints.l)} {
+    align-items: flex-start;
+    order: 0;
+  }
+
+  @media (orientation: landscape) {
     align-items: flex-start;
     order: 0;
   }
@@ -34,6 +50,15 @@ export const Heading = styled.h2`
   text-align: center;
 
   ${minWidth(breakpoints.l)} {
+    text-align: left;
+
+    span {
+      display: block;
+      font-size: 45px;
+    }
+  }
+
+  @media (orientation: landscape) {
     text-align: left;
 
     span {
@@ -52,6 +77,10 @@ export const Paragraph = styled.p`
   ${minWidth(breakpoints.l)} {
     text-align: left;
   }
+
+  @media (orientation: landscape) {
+    text-align: left;
+  }
 `;
 
 export const Btn = styled(Button)``;
@@ -60,11 +89,7 @@ export const PhotoContainer = styled.div`
   position: relative;
   border: 2px solid black;
   flex-grow: 1;
-  height: 300px;
-
-  ${minWidth(breakpoints.l)} {
-    height: 90vh;
-  }
+  min-height: 300px;
 
   &::after {
     content: 'PHOTO';

@@ -6,6 +6,8 @@ const GlobalStyle = createGlobalStyle`
     --content-x-margin: ${({ theme }) => theme.spacing.s};
     --content-y-margin: ${({ theme }) => theme.spacing.s};
 
+    scroll-behavior: smooth;
+
     ${minWidth(breakpoints.s)} {
       --content-x-margin: ${({ theme }) => theme.spacing.m};
     }

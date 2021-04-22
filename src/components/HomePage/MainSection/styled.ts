@@ -62,9 +62,10 @@ export const Btn = styled(Button)`
 
 export const BackgroundWrapper = styled.div`
   position: relative;
-  height: 100%;
+  height: 200%;
+  pointer-events: none;
   div {
-    position: fixed !important;
+    position: sticky !important;
     top: 0;
     left: 0;
     z-index: -1;
@@ -79,7 +80,7 @@ export const BackgroundWrapper = styled.div`
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    height: 100vh;
     opacity: 1;
     background-image: radial-gradient(
       #ffffffd2 10%,
