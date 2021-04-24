@@ -4,7 +4,7 @@ import * as S from './styled';
 
 export const OfferSection = () => (
   <S.Section>
-    <S.Heading>Oferta</S.Heading>
+    <S.StyledHeading>Oferta</S.StyledHeading>
     <Slider.Container initialSlide="Wesela">
       <Slider.Slide
         title="Wesela"

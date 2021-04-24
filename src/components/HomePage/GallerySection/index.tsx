@@ -1,5 +1,6 @@
 import Link from 'next/link';
 
+import { Container, Heading } from '@/components/common';
 import { GalleryCategories } from './GalleryCategories';
 import * as S from './styled';
 
@@ -37,14 +38,21 @@ const galleryCategories: GalleryCategory[] = [
 
 export const GallerySection = () => (
   <S.Section>
-    <S.Heading>Galeria</S.Heading>
-    <GalleryCategories.Wrapper>
-      {galleryCategories.map((category) => (
-        <GalleryCategories.Category {...category} />
-      ))}
-    </GalleryCategories.Wrapper>
-    <Link href="/galeria" passHref>
-      <S.Link as="a">Zobacz więcej</S.Link>
-    </Link>
+    <Heading>Galeria</Heading>
+    <Container>
+      <S.Paragraph>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni impedit
+        facere voluptatibus corporis iusto obcaecati voluptas consectetur
+        corrupti. Facere, nisi?
+      </S.Paragraph>
+      <GalleryCategories.Wrapper>
+        {galleryCategories.map((category) => (
+          <GalleryCategories.Category {...category} />
+        ))}
+      </GalleryCategories.Wrapper>
+      <Link href="/galeria" passHref>
+        <S.Link as="a">Zobacz więcej</S.Link>
+      </Link>
+    </Container>
   </S.Section>
 );

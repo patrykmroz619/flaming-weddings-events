@@ -1,11 +1,13 @@
 import styled from 'styled-components';
 
+import { Heading } from '@/components/common';
+
 export const Section = styled.section`
   position: relative;
-  min-height: 90vh;
+  min-height: 75vh;
 `;
 
-export const Heading = styled.h2`
+export const StyledHeading = styled(Heading)`
   position: absolute;
   top: -${({ theme }) => theme.spacing.xs};
   left: 50%;

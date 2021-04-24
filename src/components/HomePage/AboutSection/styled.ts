@@ -1,13 +1,13 @@
 import styled from 'styled-components';
-import { Button, Container } from '@/components/common';
+import { Button, Container, Heading } from '@/components/common';
 import { breakpoints, minWidth } from '@/style/media';
 
 export const Section = styled.section`
-  padding-bottom: ${({ theme }) => theme.spacing.l};
+  padding-bottom: 65px;
   background-color: ${({ theme }) => theme.colors.light};
 
   ${minWidth(breakpoints.xl)} {
-    padding-bottom: ${({ theme }) => theme.spacing.xl};
+    padding-bottom: 130px;
   }
 `;
 
@@ -45,7 +45,7 @@ export const Box = styled.div`
   }
 `;
 
-export const Heading = styled.h2`
+export const StyledHeading = styled(Heading)`
   max-width: 380px;
   text-align: center;
 
@@ -69,7 +69,6 @@ export const Heading = styled.h2`
 `;
 
 export const Paragraph = styled.p`
-  margin-top: var(--content-y-margin);
   margin-bottom: var(--content-y-margin);
   max-width: 380px;
   text-align: center;

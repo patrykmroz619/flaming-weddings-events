@@ -8,9 +8,9 @@ export const AboutSection = () => (
   <S.Section>
     <S.ContentWrapper>
       <S.Box>
-        <S.Heading>
+        <S.StyledHeading>
           <span>Cześć,</span> tu Paweł
-        </S.Heading>
+        </S.StyledHeading>
         <S.Paragraph>
           Założyciel firmy Flaming weddings & events. Lorem ipsum dolor sit amet
         </S.Paragraph>

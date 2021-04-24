@@ -6,8 +6,9 @@ export const Section = styled.section`
   background-color: ${({ theme }) => theme.colors.light};
 `;
 
-export const Heading = styled.h2`
-  padding: ${({ theme }) => theme.spacing.m} auto;
+export const Paragraph = styled.p`
+  margin: 0 auto;
+  max-width: 750px;
   text-align: center;
 `;
 
