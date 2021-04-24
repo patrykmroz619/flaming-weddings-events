@@ -5,7 +5,7 @@ import * as S from './styled';
 export const OfferSection = () => (
   <S.Section>
     <S.Heading>Oferta</S.Heading>
-    <Slider.Container initialSlide="weddings">
+    <Slider.Container initialSlide="Wesela">
       <Slider.Slide
         title="Wesela"
         link={{ href: `/oferta/wesela`, title: `Oferta` }}
