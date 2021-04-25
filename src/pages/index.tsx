@@ -1,5 +1,6 @@
 import {
   AboutSection,
+  ContactSection,
   GallerySection,
   MainSection,
   OfferSection,
@@ -12,6 +13,7 @@ export const Home = () => (
     <AboutSection />
     <OfferSection />
     <GallerySection />
+    <ContactSection />
   </Layout>
 );
 
